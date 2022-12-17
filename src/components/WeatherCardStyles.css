@@ -1,0 +1,165 @@
+.card {
+    padding: 40px 60px;
+    color: white;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+
+
+    text-shadow: 1px 1px 0px rgba(0,0,0,.1);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.left {
+    width: 45%;
+} 
+
+.left h1 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.left h2 {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.b {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.left img {
+    width: 70px;
+}
+
+.right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.right h2 {
+    font-weight: 200;
+    font-size: 110px;
+}
+
+.right p {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h3 {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 850px) {
+    .card {
+        padding: 30px 30px;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .left {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left h1 {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .left h2 {
+        font-size: 17px;
+    }
+
+    .right {
+        gap: 0px;
+    }
+
+    .right h2 {
+        font-size: 80px;
+    }
+
+    .right p {
+        font-size: 16px;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card {
+        padding: 30px 0;
+        width: 90%;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left h1 {
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    .left h2 {
+        font-size: 15px;
+    }
+
+    .right h2 {
+        font-size: 70px;
+    }
+
+    .bottom {
+        padding: 0 35px;
+    }
+
+    .info h3 {
+        font-size: 15px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+}
